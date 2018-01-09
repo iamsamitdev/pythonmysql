@@ -15,6 +15,7 @@ def create_table():
 
     try:
         con.execute(sql_cmd)
+        print("Create table success")
     except pyodbc.ProgrammingError:
         print("Error Already Table")
 
